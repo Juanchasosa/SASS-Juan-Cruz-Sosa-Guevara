@@ -1,0 +1,33 @@
+@import "variables";
+
+
+/*IMAGENES*/
+.tratamientoFacial-index{
+    width: 500px;
+
+}
+
+@media(max-width:600px){
+
+    .tratamientoFacial-index{
+        width: 100%;
+    }
+
+}
+
+
+.tratamientoCorporal-index{
+    width: 50%;
+    order: 3;
+}
+
+@media(max-width:600px){
+
+    .tratamientoCorporal-index{
+        width: 100%;
+        order: 1;
+
+    }
+}
+
+/*IMAGENES*/

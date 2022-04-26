@@ -1,0 +1,87 @@
+@import "variables";
+@import "textos";
+@import "imagenes";
+
+
+html{
+    font-size: 62.5%;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+.logoNav{
+    width: 80px;
+}
+
+.barraNavegacion{
+    background-color: $celesteDonne;
+    @include bordesHorizontales($verdeOscuro, 2px);
+    z-index: 1;
+
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+/*SECCIONES*/
+
+header{
+    @include flex-row-center;
+    background-color: $rosaDonne;
+    .logo{
+        width: 300px;
+        padding-bottom: 15px;
+    }
+    @media (max-width:600px){
+        .logo{
+            width: 150px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+section{
+    width: 100%;
+    @include flex-column-center;
+    margin-top: 20px;
+}
+
+.facial{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    @include bordesHorizontales (black, 1px);
+    margin-top: 10px;
+  
+}
+
+@media(max-width:600px){
+    .facial{
+        flex-direction: column;
+     }
+    
+        
+}
+
+.corporal{
+    @extend .facial;
+    margin-bottom: 5px;
+    
+}
+
+footer{
+    background-color: $celesteDonne;
+    padding: 10px ;
+    @include bordesHorizontales($verdeOscuro, 2px);
+}
+
+footer h4{
+    font-size: 16px;
+    bottom: 0;
+}
+   
+
+/*SECCIONES*/
+
+
+

@@ -1,0 +1,134 @@
+@import "variables";
+
+/*EDITOR DE TEXTO*/
+.tituloPrincipal{
+    @include flex-row-center;
+    margin: 20px;
+    color: $verdeOscuro;
+    font-size: 10rem;
+    font-family: 'Parisienne', cursive;
+    font-weight: 900;
+
+}
+
+@media (max-width:600px){
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+}
+
+
+.fancy-undeline {
+    background-image: linear-gradient(120deg, #77A1D3,#79CBCA,#E684AE 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+    background-size: 100% 88% !important;
+}
+
+
+p{
+    color: #777777;
+    padding: 5px;
+    font-size: 1.8rem;
+    width: 96%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;;
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width:600px){
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+.link{
+    color: white;
+    @include flex-column-center
+}
+
+a{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px;
+
+}
+
+@media (max-width:600px){
+    a{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.link:hover{
+    color: $verdeOscuro;
+}
+
+
+.negrita{
+    font-weight: bold;
+    color: black;
+}
+
+.hipervinculos{
+    display: inline;
+    text-decoration: underline black;
+    color: black;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+
+
+}
+
+@media (max-width:600px){
+    .hipervinculos{
+        font-size: 1.4rem;
+    }
+}
+
+.subtitulo{
+    padding: 15px;
+    color: $colorSubtitulo;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@media (max-width:600px){
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+
+
+.subtitulo2{
+    /* margin-left: 3rem; */
+    margin: 0 auto;
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;;
+    width: 95%;
+
+}
+
+.subtitulo3{
+    /* margin-left: 3rem; */
+    color: $colorSubtitulo;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;;
+    margin: 0 auto;
+    width: 95%;
+
+}
+
+/*EDITOR DE TEXTO*/
